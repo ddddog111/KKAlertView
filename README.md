@@ -28,28 +28,23 @@ Drag `KKAlertView`and `KKActionSheet` to your project.
 
 ###AlertView
 
-
-
-```Swift 
-let alertView = KKAlertView(title: nil,message:"两个button",buttonTitle:"确定",isNormal:true,action: { () -> Void in
+	let alertView = KKAlertView(title: nil,message:"两个button",buttonTitle:"确定",isNormal:true,action: { () -> Void in
             print("确定")
         })     
         alertView.addButton("取消", isNormal: false) { () -> Void in
             print("取消")
         }        
-        alertView.show()
-        ```
+        alertView.show() 
         
 ###ActionSheet
 
-```Swift 
-let actionSheet = KKActionSheet(title: "退出后不会删除任何历史数据，下次登录依然可以使用本账号。", cancelTitle:"取消", cancelAction: { () -> Void in
+    let actionSheet = KKActionSheet(title: "退出后不会删除任何历史数据，下次登录依然可以使用本账号。", cancelTitle:"取消", cancelAction: { () -> Void in
             print("取消")
         })
         actionSheet.addButton("退出登录", isDestructive: true) { () -> Void in
             print("退出登录")
         }
         actionSheet.show()
-        ```
+        
         
         
